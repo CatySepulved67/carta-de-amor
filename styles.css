@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #40e0d0, #20b2aa);
+    overflow-x: hidden;
+    position: relative;
+    color: #40e0d0;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    z-index: 10;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #40e0d0;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+.love-phrases p {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px 0;
+    border: 2px solid #40e0d0;
+    border-radius: 5px;
+    font-family: 'EB Garamond', serif;
+}
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #40e0d0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+    font-family: 'EB Garamond', serif;
+}
+button:hover {
+    background: #20b2aa;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+.login-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.login-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    border: 5px solid #40e0d0;
+}
+#romantic-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+}
+#romantic-phrase {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #40e0d0;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #40e0d0;
+    transform: rotate(45deg);
+    animation: float 10s linear infinite;
+    z-index: 5;
+}
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #40e0d0;
+    border-radius: 50%;
+}
+.heart::before {
+    left: -10px;
+}
+.heart::after {
+    top: -10px;
+}
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 14px;
+    color: #40e0d0;
+    text-align: center;
+    animation: float 12s linear infinite;
+    z-index: 5;
+    max-width: 150px;
+    font-family: 'EB Garamond', serif;
+}
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .love-phrases p {
+        font-size: 1em;
+    }
+    #romantic-phrase {
+        font-size: 1.2em;
+    }
+}
