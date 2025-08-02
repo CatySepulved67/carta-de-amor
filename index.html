@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Page -->
+        <div id="login-page" class="page active">
+            <h1>Mi Corazón es Tuyo</h1>
+            <p>Escribe nuestro destino para abrir esta carta de amor.</p>
+            <input type="text" id="name-input" placeholder="Escribe 'Amor'">
+            <button onclick="checkName()">Abrir la Carta</button>
+        </div>
+        <!-- Letter Page -->
+        <div id="letter-page" class="page">
+            <h1>Carta de Amor Eterno</h1>
+            <p>Mi amor, eres la luz que ilumina mi alma. Cada día contigo es un sueño del que nunca quiero despertar. Esta carta es para ti, con todo mi corazón.</p>
+            <div class="love-phrases">
+                <p>1. Eres el sueño del que nunca quiero despertar.</p>
+                <p>2. Tu sonrisa es mi refugio favorito.</p>
+                <p>3. Contigo, cada momento es un tesoro eterno.</p>
+                <p>4. Mi corazón susurra tu nombre en cada latido.</p>
+                <p>5. Eres la poesía que nunca supe escribir.</p>
+                <p>6. En tus ojos encuentro mi hogar.</p>
+                <p>7. Te amo más allá de las estrellas.</p>
+                <p>8. Eres mi sol en los días más oscuros.</p>
+                <p>9. Cada día contigo es un nuevo capítulo de amor.</p>
+                <p>10. Tu amor es mi fuerza y mi paz.</p>
+                <p>11. Eres la melodía que nunca se desvanece.</p>
+                <p>12. Mi mundo es más bello porque estás en él.</p>
+                <p>13. Te llevaré en mi corazón por siempre.</p>
+                <p>14. Eres mi destino y mi comienzo.</p>
+                <p>15. Amar es mirarte y sentir que todo está bien.</p>
+                <p>16. Eres mi eternidad en cada instante.</p>
+                <p>17. Contigo, el tiempo se detiene y el amor crece.</p>
+                <p>18. Eres la chispa que enciende mi alma.</p>
+                <p>19. Mi amor por ti no conoce límites.</p>
+                <p>20. Eres mi todo, hoy y siempre.</p>
+            </div>
+            <button onclick="showLogin()">Te quiero</button>
+            <button onclick="showPage('login-page')">Regresar al Inicio</button>
+        </div>
+    </div>
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-content">
+            <img id="romantic-image" src="https://th.bing.com/th/id/R.f86a9a76c6bfda2ab1304c7dcdfb38e3?rik=EuuWPBPsVdd%2f3g&pid=ImgRaw&r=0" alt="Romantic Sunset">
+            <div id="romantic-phrase">Gracias por llegar a mi vida 🌟 y convertir mis días en alegría pura 💫💕. Tu amor es mi mayor regalo 🎁❤️.</div>
+            <a href="https://youtu.be/ihE74nG8ioc?si=BL6SRZmd7T6njfoP" target="_blank" class="youtube-link">Escuchar "Volverte a Ver" en YouTube</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
